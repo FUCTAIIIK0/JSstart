@@ -34,23 +34,23 @@
 // console.log(colors[i]);
 // }
 
-// const users = [{
-//   name: 'Denis',
-//   age: 20
-// },
-// {
-//   name: 'Igor',
-//   age: 30
-// },
-// {
-//   name: 'Vasya',
-//   age: 27
-// },
-// {
-//   name: 'Ildar',
-//   age: 30
-// }  
-// ];
+const users = [{
+  name: 'Denis',
+  age: 20
+},
+{
+  name: 'Igor',
+  age: 30
+},
+{
+  name: 'Vasya',
+  age: 27
+},
+{
+  name: 'Ildar',
+  age: 30
+}  
+];
 
 // const usersObj ={};
 
@@ -62,12 +62,21 @@
 
 // console.log(usersObj);
 
-const user = {
-  name: 'Denis',
-  age: 30
-};
+// const user = {
+//   name: 'Denis',
+//   age: 30
+// };
 
-for( let key in user){
-  console.log(key);
-  console.log(user[key]);
+
+
+// for( let key in user){
+//   console.log(key);
+//   console.log(user[key]);
+// }
+ 
+
+
+
+for(let value of users){
+  console.log(value);
 }

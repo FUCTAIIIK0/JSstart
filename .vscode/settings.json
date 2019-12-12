@@ -1,4 +1,5 @@
 {
   "better-comments.highlightPlainText": true,
-  "prettier.requirePragma": true
+  "prettier.requirePragma": true,
+  "editor.formatOnSave": true
 }

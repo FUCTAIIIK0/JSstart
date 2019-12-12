@@ -6,7 +6,7 @@ value = num1 - num2;
 value++;
 value +=10;
 value=10%3
-
+ 
 value = 0.6+0.3;
 value = value.toFixed(3)
 
