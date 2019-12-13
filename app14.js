@@ -30,6 +30,6 @@ const square = function(x){
   return x*x;
 };
 
-// (function()){
-
-// })()
+(function(msg){
+  console.log(msg)
+})('Hello world');
