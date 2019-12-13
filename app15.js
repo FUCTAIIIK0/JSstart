@@ -12,6 +12,7 @@ value =Array.isArray(numArr);
 value = numArr[2];
 numArr[2] = 12;
 
+
 value = numArr.indexOf(32);
 
 value = numArr.push(100);
