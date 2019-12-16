@@ -78,6 +78,7 @@ function question(job){
   //  } else if(job === 'teacher'){
   //     return `какой предмет вы ведете?`; 
   //   }
+  
   }
 
   const developerQuestion = question(`teacher`);
