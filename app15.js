@@ -4,14 +4,12 @@ let value;
 
 value = numArr.length
 
-// numArr.length = 0;
-// numArr.length = 100;
+// numArr.length = 0; numArr.length = 100;
 
-value =Array.isArray(numArr);
+value = Array.isArray(numArr);
 
 value = numArr[2];
 numArr[2] = 12;
-
 
 value = numArr.indexOf(32);
 

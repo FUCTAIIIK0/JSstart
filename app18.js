@@ -8,23 +8,17 @@ const plus = (x,y) => x+y;
 // console.log(plusFoo(1,2));
 
 const withoutArgs = () => console.log('Hello world');
-const singlArg = x => x*2;
-const moreActions = (a,b) =>{
-  a *= 2;
-  b *= 3;
-  return a + b;
+const singlArg = x => x * 2;
+const moreActions = (a, b) => {
+    a *= 2;
+    b *= 3;
+    return a + b;
 };
 const returnObj = (str = '') => {
-  return {
-    value: str,
-    lenth: str.length
-  }
+    return {value: str, lenth: str.length}
 }
 
-const returnObjSimple = (str = '') => ({
-  value: str,
-  lenth: str.length
-});
+const returnObjSimple = (str = '') => ({value: str, lenth: str.length});
 
 
 //console.log(singlArg(2))
@@ -41,17 +35,17 @@ function plusFoo(x,y){
 //console.log(plusFoo(1,2,'das')); //Arguments(3) [1, 2, "das", callee: ƒ, Symbol(Symbol.iterator): ƒ]
 
 
-const obj ={
-  firstName: 'Denis',
-  age: 30,
-  getFirstName(){
-    console.log(this);
-  },
-  getAgeArrow: null,
-  getAge(){
-    this.getAgeArrow = () => console.log(this);
-    setTimeout(() => console.log(this) )
-  },
+const obj = {
+    firstName: 'Denis',
+    age: 30,
+    getFirstName() {
+        console.log(this);
+    },
+    getAgeArrow: null,
+    getAge() {
+        this.getAgeArrow = () => console.log(this);
+        setTimeout(() => console.log(this))
+    }
 };
 
 obj.getAge();

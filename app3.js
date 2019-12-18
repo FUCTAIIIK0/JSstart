@@ -1,20 +1,18 @@
-const user= {
-  firstName:'Denis',
-  age:30,
-  isAdmin: true,
-  email: 'test@test.com',
-  'user-address':{
-    city: 'Moscow'
-  },
-  skills:['html','css','js']
+const user = {
+    firstName: 'Denis',
+    age: 30,
+    isAdmin: true,
+    email: 'test@test.com',
+    'user-address': {
+        city: 'Moscow'
+    },
+    skills: ['html', 'css', 'js']
 };
-
 
 let value;
 
 let prop = 'email';
 prop = 'skills';
-
 
 value = user.firstName;
 value = user['isAdmin'];
