@@ -35,31 +35,49 @@ const user = {
 // console.log(key,value) //nestedKey nestedValue
 
 //copy object
-console.log(user);
+// console.log(user);
 
-const newUser = {
-    ...user,
-    age: 30
-};
-console.log(newUser);
+// const newUser = {
+//     ...user,
+//     age: 30
+// };
+// console.log(newUser);
 
-const {
-    info: {
-        skills: [html, css]
-    }
-} = newUser;
+// const {
+//     info: {
+//         skills: [html, css]
+//     }
+// } = newUser;
 
-console.log(html, css);
+// console.log(html, css);
 
-function myPerson({
-    lastName = '&',
-    firstName = '&',
-    info: {
-        skills
-    } = {}
-} = {}) {
-    console.log(lastName, firstName, skills);
+// function myPerson({
+//     lastName = '&',
+//     firstName = '&',
+//     info: {
+//         skills
+//     } = {}
+// } = {}) {
+//     console.log(lastName, firstName, skills);
+// }
+
+// myPerson(newUser);
+// myPerson();
+
+// function foo(x,y){
+//     // console.log(arguments);
+//     // console.log([].slice.call(arguments));
+//     const [...args] = arguments;
+//     console.log(args);
+// }
+
+// foo(1,2);
+
+const numbers = [1,2,3];
+
+function foo2(x, y) {
+    console.log(x, y);
 }
 
-myPerson(newUser);
-myPerson();
+foo2(...numbers);//1 2
+foo2(numbers); //(3) [1, 2, 3]0: 11: 22: 3length: 3__proto__: Array(0) undefined
